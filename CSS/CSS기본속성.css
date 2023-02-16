@@ -1,0 +1,86 @@
+h1{color: rgb(0,0,0,0.5);} /* r g b 명도 */
+body 
+{
+    background-image : linear-gradient(rgba(0,0,255,0.5), 
+    rgba(255,255,0,0.5)), 
+    url(./img/cat-gc907f884a_1920.jpg); 
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+}
+.text-center
+{
+    text-align: center;
+}
+.decoration
+{
+    text-decoration: underline dashed 1px black;
+}
+a
+{
+    text-decoration: none;
+    text-decoration-line: overline;
+    text-decoration-color: blue;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 4px;
+}
+.text-shadow
+{
+    text-shadow: 2px 2px 2px red; /* x y 흐림정도*/
+}
+.text
+{
+    color :blue;
+}
+.font-mono
+{
+    font-family: Vivaldi, serif;
+}
+.font-weight
+{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+/* 띄워쓰기 사용 link 클래스 안에있는 a태그 접근*/
+.link a:link
+{
+    color: violet;
+}
+.link a:visited
+{
+    color: brown;
+}
+.link a:hover
+{
+    color: coral;
+}
+.link a:active
+{
+    color: cyan;
+}
+/*클래스이름 바로 뒤에 상태를 붙여서 사용할 수 있다*/
+.p-hover:hover
+{
+    color: brown;
+}
+.list-mark
+{
+    list-style-image:url(./img/free-icon-heart-8978829.png) ;
+    list-style-position: inside;
+}
+/*두개이상의 태그나 클래스에 동일한 css 넣고싶을때,를 동해서 함께 넣어줄 수있다*/
+.table-col td, .table-col
+{
+    border: solid 1px black;
+}
+.table-col{border-collapse: collapse;}
+
+.table-cell, .table-cell td
+{
+    border: solid 1px black;
+}
+.table-cell
+{
+    empty-cells: hide;
+}

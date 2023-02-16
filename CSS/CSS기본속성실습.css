@@ -1,0 +1,22 @@
+h1:hover
+{
+    text-shadow: 2px 2px 2px black;
+}
+.List-style
+{
+    border: solid 2px olivedrab ; background-color: bisque;
+}
+.List-style li, .List-style a 
+{
+    list-style-type: circle ;
+    text-decoration: none;
+    color: black;
+}
+.Text-style
+{
+    color: green;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 1px;
+}
