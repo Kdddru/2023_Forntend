@@ -26,5 +26,45 @@
     <p class="hidden">숨김</p>
     <p class="none">없앰</p>
     <h2 class="opacity">투명도</h2>
+
+    <h2>포지션 - position</h2>
+    <div class="position-r Box">
+        상대위치 포지션
+    </div>
+    <div class="position-s Box">
+        정적위치 포지션
+    </div>
+    <div class="position-r Box">
+        상대위치 포지션
+    </div>
+    <p>
+        relative속성은 정적위치에서 상대적으로 요소를 움직일 수 있다
+        부모의 위치를 기준으로 상대적으로 움직인다고 이야기 할 수 있다
+    </p>
+    <div class="box-parant">
+        <div class="position-r Box">
+            상대위치 포지션 (부모태그랑 같이 사용한다)
+        </div>
+    </div>
+    <p>
+        relative를 사용할때 바로 사용을 하게 되면
+        원래 정적위치에서 사용한 공간만 차지하고 이동한 공간은
+        다른 태그가 그대로 있게 된다 <br>
+        *부모로 사용할 공간을 지정하고 자식태그롤 relative를 사용하여
+        이동한다
+    </p>
+    <div class="Box position-f">
+        고정위치
+        <p>브라우저 화면상에서 고정된 위치에 나온다</p>
+    </div>
+    <p>고정위치는 정적위치를 사용하지않는다</p>
+    <div class="Box position-a">절대위치</div>
+    <div class="box-paprent">
+        <div class="Box position-a" 
+        style="height: 100px; background-color: blueviolet;">
+            절대위치
+            <p>부모에 구애받지않고 전체 화면에서 이동</p>
+        </div>
+    </div>
 </body>
 </html>

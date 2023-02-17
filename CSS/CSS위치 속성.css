@@ -21,3 +21,38 @@
     opacity: 15%;   /*0에 가까울수록 투명해짐  1~100%, 0~1 */
     background-color: aqua;
 }
+.Box
+{
+    width: 150px;
+    height: 150px;
+    background-color: bisque;
+}
+.position-r
+{
+    /*상대위치를 쓰겠다*/
+    position: relative;
+    left : 30px
+}
+.position-s
+{
+    position: static;
+    /*정적위치에서는 이동할 수 없다*/
+    left: 30px;
+}
+.box-parant
+{
+    height: 300px;
+}
+.position-f
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.position-a
+{
+    position: absolute;
+    top: 50px;
+    left:100px;
+    top: 250px;
+}
