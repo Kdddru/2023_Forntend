@@ -5,16 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS1.css">
+    <link rel="stylesheet" href="./CSS 박스 모델.css">
 </head>
 <body>
-    <h2>마진값 -atuo</h2>
+    <h2>마진값 -auto</h2>
     <div class="my-m-auto">marin 속성값 auto</div>
     <p>
         margin 속성값 auto 값을 사용해줄때는 
         display가 bloke속성(div주로 사용) , content크기가 부모보다 
         (부몬의 크기와 같으면 마진이 들어갈 공간이없다)<br>
         margin -auto를 사용하면 부모의 크기 기준으로 중앙으로 정렬된다
+    </p>
+    <h2>아웃라인 - outline</h2>
+    <p class="outlin">아웃라인</p>
+    <p>
+        outline은 border와 동일하게 사용할 수 있다 <br>
+        그려지는 위치도 동일하게 그려진다<br>
+        단, 두께는 크기의 범위에 들어가지 않기 때문에
+        계산 할 필요가 없다
+    </p>
+    <p>
+        outline과 box-size에서 border-size로 작성했을때, <br>
+        *outline을 사용하면 border값 계산x <br>
+        *box-size를 사용하면 padding과 content(heihgt.width)를
+        따로 계산 할 필요없음 content값만 계산 <br>
+        >> 요소의 크기 계산 : margin + content
     </p>
 </body>
 </html>

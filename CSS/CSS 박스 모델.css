@@ -3,3 +3,10 @@
     border: solid 2px blue;
     width: 300px;
 }
+
+.outlin
+{
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: darkgoldenrod;
+}
