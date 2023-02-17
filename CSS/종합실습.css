@@ -1,0 +1,42 @@
+a
+{
+    text-decoration-line: none;
+    color: black;
+}
+.Hyp
+{
+    text-align: center;
+    background-color: orange;
+    width: 13ch;
+    padding: 1ch;
+    border-radius: 20px;
+}
+.Hyp:hover
+{
+    background-color: brown;
+}
+.Hyp1
+{
+    display: block;
+    text-align: center;
+    background-color: orange;
+    width: 13ch;
+    padding: 1ch;
+    border-radius: 20px;
+}
+a:hover
+{
+    color: red;
+    font-weight: bold;
+    border-bottom: solid red;
+}
+.link1
+{
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 1ch;
+}
+.link1:hover
+{
+    background-color: blue;
+}
