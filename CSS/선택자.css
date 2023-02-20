@@ -1,0 +1,23 @@
+.outbox p{
+    background-color: yellow;
+}
+.outbox > p {
+    background-color: blue;
+}
+
+.sibling ~ p {
+    background-color: aqua;
+
+}
+.sibling ~ a {
+    background-color: blueviolet;
+}
+
+.sibling + p {
+    background-color: blueviolet;
+}
+
+.input-focus:focus{
+    background-color: brown;
+    color: white;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./선택자.css">
+</head>
+<body>
+    <h1>CSS 선택자</h1>
+    <p>
+        각각의 태그에 하나의 선택자, 하나의 클래스로 
+        접근하는데 한계가 있음 <br>
+        두개이상의 선택자를 사용해서 원하는 태그에 접근
+    </p>
+    <h2>결합 선택자</h2>
+    <h3>자손 선택자</h3>
+    <div class="outbox">
+        <p>div의 outbox 자식인 p태크</p>
+        <div>
+            <p>바깥 div의 자손인 p태그</p>
+        </div>
+        <p>div outbox의 자식인 p태그</p>
+    </div>
+    <h3>동위/형제 선택자</h3>
+    <div>
+        <p class="sibling">형제를 선택합니다</p>
+        <p>p의 p태그 형제</p>
+        <a href="#">p의 a태그 형제</a>
+        <p>p의 p태그 형제</p>
+    </div>
+    <div>
+        <p>부모가 다르기 때문에 형제가 아니다</p>
+    </div>
+    <p>
+        부모, 자식 , 형제 관계를 통해서 태그에 접근할수 있다 <br>
+        이때, 더 좁은 버위의 CSS가 적용이 되게 된다 <br>
+        .test : 모든 test클래스를 가진 태그 <br>
+        .sibling~p : 모든 sibling클래스를 가진 태그의 형제 중 p 태그
+        아래의 경우가 더 좁다
+    </p>
+    <h2>의사 클래스</h2>
+    <h3>동적 의사클래스</h3>
+    <p>
+        :link, :visited, :hover, :active, :focus
+        와 같은 상태에 따른 CSS 디자인을 따로 넣어줄 수 있다
+    </p>
+    <label for="">아래 input 태그에 포커스를 주면 백그라운드 색이 바뀐다</label>
+    <input class="input-focus" type="text" name="" id="">
+</body>
+</html>

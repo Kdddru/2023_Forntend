@@ -1,0 +1,37 @@
+.Bookmark{
+    background-color: aqua;
+    border: solid 2px black;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.Bookmark ul{
+    list-style-type: none;
+}
+
+
+.Bookmark li a{
+    text-decoration: none;
+    color: black;
+}
+.Bookmark li:hover{
+    color: white;
+}
+
+.divList{
+    background-color: yellow;
+    padding: 5px 20px;
+}
+.divList ul{
+    overflow: auto;
+    padding: 20px;
+    background-color: darkorange ;
+    width: 70%;
+}
+.divList ul li{
+    margin: 5px;
+    list-style-type: none;
+    float: left;
+}

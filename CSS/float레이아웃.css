@@ -1,6 +1,6 @@
 .float-left{
     float: left;
-    width: 300px;
+    width: 100px;
 }
 .float-clear{
     clear: both;
@@ -22,6 +22,8 @@
     background-color: aqua;
     height: 200px;
     padding: 10px;
+    /*float를 사용하지 않는 곳에서는 scroll이 생긴다*/
+    overflow: auto;
 }
 .section1, .section2{
     background-color: blue;
@@ -34,4 +36,57 @@
 .section2{
     margin-left: 110px;
     border: solid 2px ;
+}
+
+
+
+
+
+
+h1{
+    text-align: center;
+}
+
+.header-border{
+    padding: 5px;  
+    border: solid 2px yellow;
+}
+
+.nav-border{
+    float: left;
+    border: solid 2px pink;
+    width: 150px;
+    margin-bottom: 150px;
+}
+
+.section-border{
+    border: solid 2px blue;
+    margin-left:154px;
+}
+.footer-border{
+    border: solid 2px green;
+}
+
+
+
+.float-right{
+    float: right;
+}
+
+.align-margin{
+    width: 50px;
+    margin: 0 auto;
+    border: solid 2px brown;
+}
+
+.align-postion{
+    position: absolute;
+    left:40%;
+    border: solid 2px brown;
+}
+
+
+.container{
+    background-color: aqua;
+    overflow: auto;
 }
