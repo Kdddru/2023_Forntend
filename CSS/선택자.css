@@ -21,3 +21,51 @@
     background-color: brown;
     color: white;
 }
+
+.input-focus:focus + p{
+    color: blue;
+}
+
+.state > input:checked +span{
+    color: grey;
+}
+
+.state > input:disabled +span{
+    text-decoration: line-through 1px solid;
+}
+
+.menu-list>li:first-child{
+    background-color: aquamarine;
+}
+.menu-list>li:last-child{
+    background-color: crimson;
+}
+
+.menu-list>li:nth-child(2n){
+    color: brown;
+}
+.table-color{
+    border-collapse: collapse;}
+
+    /*tbody가 추가 됨으로써 적용이 안된것*/
+.table-color>tbody>tr:nth-child(2n){
+    background-color: yellow;
+}
+.table-color tr:nth-child(2n+1){
+    background-color: blue;
+}
+
+.child-tag>p:first-child{
+    color: blue;
+}
+.child-tag > h1{
+    color: blanchedalmond;
+}
+
+p:first-of-type{
+    color: red;
+}
+
+.type-of>p:first-of-type{
+    color: brown;
+}

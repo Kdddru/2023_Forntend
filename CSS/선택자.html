@@ -48,5 +48,68 @@
     </p>
     <label for="">아래 input 태그에 포커스를 주면 백그라운드 색이 바뀐다</label>
     <input class="input-focus" type="text" name="" id="">
+    <p>input 태그에 포커스를 주면 p태그의 글자색이 바뀝니다</p>
+
+    <h3>상태의사 클래스</h3>
+    <div class="state">
+        <input type="checkbox" name="" id="" checked>
+        <span>위 내용을 숙지하셨습니까?</span><br>
+        <input type="checkbox" name="" id="" checked>
+        <span>위 내용을 숙지하셨습니까?</span>
+    </div>
+    <div class="state">
+        <input type="checkbox" disabled>
+        <span>확인</span>
+    </div>
+    <p>
+        클래스 이름을 필요에 따라서 사용할 수 있고
+        동일한 디자인을 계속 쓰고 싶다면 같은 클래스를 사용한다
+    </p>
+    <h3>구조 의사 클래스</h3>
+    <ul class="menu-list">
+        <li>첫번째</li>
+        <li>두번째</li>
+        <li>세번째</li>
+        <li>네번째</li>
+    </ul>
+    <p>
+        리스트나 테이블과 같이 자식을 가지는 태그에서
+        특정 자식을 선택해야할 때 사용한다 <br>
+        :nth-child(2) : 2번째 자식 태그에 디자인을 준다
+        :nth-child(2n) : 짝수째 자식 태그에 디자인을 준다
+    </p>
+    <p>짝수번쨰 색상이 노란색으로 바꾸세요</p>
+    <p>border-collapse사용후 tr background</p>
+    <table class="table-color">
+        <tr>
+            <td>첫번째</td>
+        </tr>
+        <tr>
+            <td>두번째</td>
+        </tr>
+        <tr>
+            <td>세번째</td>
+        </tr>
+        <tr>
+            <td>네번째</td>
+        </tr> 
+        <tr>
+            <td>다섯번째</td>
+        </tr>
+    </table>
+    <h3>of-type</h3>
+    <p>속성중에서 순서를 찾아서 작성</p>
+    <div class="child-tag">
+        <p>div의 자식</p>
+        <h1>div의 자식</h1>
+        <h2>div의 자식</h2>
+    </div>
+    <div class="type-of">
+        <p>a</p>
+        <p>b</p>
+        <div>
+            <p>최초의 요소</p>
+        </div>
+    </div>
 </body>
 </html>

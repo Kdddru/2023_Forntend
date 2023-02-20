@@ -1,0 +1,18 @@
+.first-div{
+    border: solid 2px red;
+}
+.first-div>ul{
+    list-style-type: none;
+}
+.first-div>ul>li>a{
+    text-decoration: none;
+}
+.second-div>div>a{
+    float: right;
+    background-color: blue;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
