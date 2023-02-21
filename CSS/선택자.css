@@ -69,3 +69,28 @@ p:first-of-type{
 .type-of>p:first-of-type{
     color: brown;
 }
+
+.before-img::before{
+    content: "";
+    background-image: url(./img/free-icon-heart-8978829.png);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+
+.attr>input[type="checkbox"]:checked+span{
+
+    color: aqua;
+
+}
+.attr>input[type="radio"]:checked+span{
+
+    text-decoration: underline wavy;
+
+}
+
+.attr>input[type = "button"]:hover{
+    background-color: black;
+    color: white;
+}

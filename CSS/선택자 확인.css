@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*Header*/
+.header{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 30px;
+}
+
+/*Nav*/
+.nav{
+    background-color: aqua;
+    overflow: auto;
+    padding: 5px;
+}
+.nav>ul{
+    margin-left: 5%;
+}
+.nav>ul>li{
+    float: left;
+    list-style-type: none;
+    border-right: solid 1.5px black;
+    padding: 0 10px;
+    
+}
+/*마지막 border-right 지우기*/
+.nav>ul>li:last-child{
+    border: none;
+}
+.nav>ul>li>a{
+    text-decoration: none;
+}
+
+/*Main*/
+.main{
+    margin: 0 20%;
+    clear: both;
+    background-color: chartreuse;
+    min-height: auto;
+}
+.main li{
+    list-style-type: none;
+}
+
+/*footer*/
+.footer{
+    background-color: greenyellow;
+    text-align: center;
+    min-height: auto;
+}
