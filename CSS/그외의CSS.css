@@ -1,0 +1,70 @@
+@import url(./CSS기본속성.css);
+@font-face {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+input[type="button"]{
+    background-image: url(./img/free-icon-heart-8978829.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+}
+.font{
+    font-family:"NeoDunggeunmoPro-Regular" ;
+}
+
+.gradient{
+    height: 50px;
+    background:-webkit-linear-gradient(0deg,green,yellow,white);
+}
+body{
+    background:-webkit-linear-gradient(270deg, #0000009a,#fff) ;
+}
+
+.gradient-circle{
+    width: 150px;
+    height: 150px;
+    background: -webkit-radial-gradient(blue 50%, white 50%);
+}
+.gradient-circle2{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background:-webkit-radial-gradient(closest-side,red, orange, yellow,green,blue,indigo,purple);
+}
+.box-shadow{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    box-shadow: 1px 1px 10px black;
+}
+.background{
+    overflow: auto;
+    background-image: url(./img/free-icon-heart-8978829.png);
+    width: 400px;
+    height: 300px;
+    background-repeat: repeat;
+    background-size: 50px 50px;
+}
+.background2{
+    width: 600px;
+    height: 300px;
+    border: solid 2px white;
+    padding: 50px;
+    background-image: url(./img/free-icon-design-tool-9666968.png);
+    background-origin: content-box;
+    background-clip: content-box;
+}
+.background3{
+    background-image: url(./img/free-icon-heart-8978829.png);
+    font-size: 2rem;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    color: transparent;
+}
