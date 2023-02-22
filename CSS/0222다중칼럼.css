@@ -1,0 +1,17 @@
+.col{
+    min-height: 200px;
+    column-count: 2;
+    background-color: aqua;
+    column-rule: solid 2px yellow;
+    column-gap: 30px;
+    padding: 10px;
+    column-fill:balance;
+}
+figure>img{
+    width: 100px;
+    height: 100px;
+}
+.span-all{
+    column-span: all;
+    background-color: chartreuse;
+}

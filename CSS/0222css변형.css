@@ -97,16 +97,15 @@ input[type="checkbox"]:checked+span{
     width: 300px;
     height: 300px;
     background-size: cover;
-    background-origin: content-box;
+    background-origin: border-box;
     background-position: center;
     display: inline-block;
     overflow: auto;
     transition: all 1s;
 }
 .img-container>.img:hover{
-    background-color: black;
+    background-color: #0000005a;
     background-blend-mode: multiply;
-    opacity: 0.2;
     transform : scale(1.1);
     transition: all 1s;
 }
@@ -192,4 +191,61 @@ input[type="checkbox"]:checked+span{
     z-index: 10;
     box-sizing: border-box;
     padding: 30px;
+}
+.filter{
+    width: 300px;
+    height: 300px;
+}
+.filter:hover{
+    filter: blur(3px) brightness(2);
+    transition: all 2s;
+
+}
+
+.img-list>.content-image{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
+
+
+.img-list>.content-image:nth-child(1){
+    background-image: url(./img/cat-gc907f884a_1920.jpg);
+    filter: invert();
+}
+.img-list>.content-image:nth-child(2){
+    background-image: url(./img/free-icon-heart-8978829.png);
+    filter: contrast(50%);
+}
+.img-list>.content-image:nth-child(3){
+    background-image: url(./img/free-icon-design-tool-9666968.png);
+    filter: sepia(60%);
+}
+.pencil{
+    width: 150px;
+    height: 150px;
+    background-image: url(./img/free-icon-design-tool-9666968.png);
+    background-size: cover;
+    animation-name: bive;
+    animation-duration: 1s;
+    animation-iteration-count: infinite
+}
+@keyframes bive{
+    to{
+        transform: rotate(-10deg);
+    }
+    from{
+        transform: rotate(30deg);
+    }
+    
+}
+
+.mix-blend{
+    color: white;
+    mix-blend-mode: difference;
+    background-color: blue;
+}
+body{
+    background-color: white;
 }

@@ -1,0 +1,30 @@
+.flex-box{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.flex-box-height{
+    display: flex;
+    height: 150px;
+    background-color: yellow;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-box-height>p{
+    padding: 5px;
+    background-color: aliceblue;
+}
+.flex-box-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.flex-box-height-wrap{
+    display: flex;
+    height: 150px;
+    background-color: aquamarine;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
