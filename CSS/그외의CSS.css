@@ -68,3 +68,25 @@ body{
     -webkit-background-clip: text;
     color: transparent;
 }
+
+.border-image{
+    border-image-source: url(./img/free-icon-heart-8978829.png) 30;
+}
+
+.text{
+    background-color: chartreuse;
+    height: 100px;
+    word-break: keep-all;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+}
+
+.text-kr{
+    background-color: chocolate;
+    width: 100px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

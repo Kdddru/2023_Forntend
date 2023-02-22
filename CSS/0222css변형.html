@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./0222css변형.css">
+</head>
+<body>
+    <h1>2d Transform</h1>
+    <p>요소들을 이동하거나 회전할 수 있다</p>
+    <div class="my-box">
+        아무것도 적용되지않은 박스
+    </div>
+    <div class="my-box trans">
+        x,y축 으로 이동합니다
+    </div>
+    <div class="my-box rotate">
+        회전하는 박스
+    </div>
+    <div class="my-box transform">
+    </div>
+    <div class="my-box transform-3d">
+        3d각도로 회전
+    </div>
+
+    <div class="my-box transition">
+    </div>
+    <p>
+        전환을 사용할떄는 전환이 되기전 디자인과 
+        전환이 된 후의 디자인 두개가 필요하다
+    </p>
+    <div class="my-box transform-transition">
+    </div>
+    <p>
+        전환을 할때, 여러 속성 이름으로 전환을 할 수 있다 <br>
+        전환을 추가할때 ,를 통해 속성이름과 시간 추가<br>
+        수정한 모든 값을 전활할때 all
+    </p>
+    <div class="my-box liner-transition"></div>
+
+    <h1>전환 효과 연습</h1>
+    <p>아래 태그들에게 전환효과를 넣으세요</p>
+    <div>
+        <input type="checkbox">
+        <span>체크가 되면 글자색이 파랗게 전환</span>
+    </div>
+    <div class="after-transition">
+        <p>
+            after를 이용해서 마우스를 올리면 배경색이 검정으로 바뀌고
+            다른 글자가 나오게 전환
+        </p>
+    </div>
+    <p>
+        전환효과를 주기전에, 해당 태그에 전환했을때 디자인이
+        들어가 있는지를 확인한 후,
+        전환효과를 주면 빠지는 내용없이 확인하기 쉽다<br>
+    </p>
+    <div class="content-container">
+        <div class="img"></div>
+    </div>
+    <h2>마우스를 올렸을때 확대되는 이미지 만들기</h2>
+    <p>2개의 div가 같은 라인에서 나오도록</p>
+    <div class="img-container">
+        <div class="img"></div>
+        <div class="img"></div>
+    </div>
+</body>
+</html>

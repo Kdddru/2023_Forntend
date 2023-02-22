@@ -1,0 +1,109 @@
+.my-box{
+    width: 150px;
+    height: 150px;
+    background-color: aquamarine;
+}
+.trans{
+    transform: translate(200px, -150px);
+}
+.rotate{
+    transform: translate(0,-100px) rotate(30deg) ;
+}
+.transform{
+    transform: translate(100px,-50px) scale(0.8) skewx(30deg);
+}
+.transform-3d{
+
+    transform: rotateX(30deg) rotateY(30deg) rotateZ(30deg); 
+
+}
+.transition:hover{
+    background-color: red;
+    transition: background-color 1s;
+}
+.transition{
+    transition: background-color 1s;
+
+}
+
+.transform-transition:hover{
+    transform: translate(100px,0) rotate(180deg);
+    width: 100px;
+    transition:all 3s;
+    transition-delay: 0.5s;
+}
+.transform-transition{
+    transition:all 3s ;
+}
+
+.liner-transition:hover{
+    transform: rotate(90deg);
+    transition: all 2s;
+    transition-timing-function: ease;
+}
+input[type="checkbox"]:checked+span{
+    color: blue;
+    transition: all 1s;
+}
+
+.after-transition>p::after{
+    content: "새로운 내용이 나타납니다";
+    color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+
+}
+
+
+.after-transition>p:hover::after{
+    content: "새로운 내용이 나타납니다";
+    background-color: black;
+    color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.content-container{
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+    overflow: hidden;
+}
+.content-container>.img{
+    background-image: url(./img/free-icon-design-tool-9666968.png);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-origin: content-box;
+    background-position: center;
+    transition: all 1s;
+}
+.content-container>.img:hover{
+    transform: scale(1.2);
+    transition: all 1s;
+}
+.img-container{
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-container>.img{
+    background-image: url(./img/cat-gc907f884a_1920.jpg);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-origin: content-box;
+    background-position: center;
+    display: inline-block;
+    transition: all 1s;
+}
+.img-container>.img:hover{
+    opacity: 0.8;
+    transform : scale(1.1);
+    transition: all 1s;
+}
