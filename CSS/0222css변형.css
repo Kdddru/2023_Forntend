@@ -33,7 +33,7 @@
     transition-delay: 0.5s;
 }
 .transform-transition{
-    transition:all 3s ;
+    transition:all 3s;
 }
 
 .liner-transition:hover{
@@ -100,10 +100,96 @@ input[type="checkbox"]:checked+span{
     background-origin: content-box;
     background-position: center;
     display: inline-block;
+    overflow: auto;
     transition: all 1s;
 }
 .img-container>.img:hover{
-    opacity: 0.8;
+    background-color: black;
+    background-blend-mode: multiply;
+    opacity: 0.2;
     transform : scale(1.1);
     transition: all 1s;
+}
+
+.animation{
+    animation-name: movingback;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes moving{
+    from{transform: translate(0,0);}
+    to{transform: translate(100px,0);}
+}
+
+@keyframes movingback{
+    0%{transform: translate(0,0);}
+    50%{transform: translate(200px,0);}
+    100%{transform: translate(0,0);}
+}
+
+.animation-box{
+    animation: movingbox 6s infinite;
+
+}
+
+@keyframes movingbox{
+    0%{
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+        transform: rotate(0deg);
+        background-color: blueviolet;
+
+    }
+    20%{
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        border-top-right-radius: 0%;
+        transform: rotate(90deg);
+        background-color: blueviolet;
+    }
+    40%{
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 0%;
+        border-top-right-radius: 0%;
+        transform: rotate(180deg);
+        background-color: blueviolet;
+    }
+    60%{
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 0%;
+        transform: rotate(270deg);
+        background-color: blueviolet;
+    }
+    80%{
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+        transform: rotate(360deg);
+        background-color: blueviolet;
+    }
+    100%{
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        transform: rotate(360deg);
+        background-color: blueviolet;
+    }
+
+}
+.text{
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+    box-sizing: border-box;
+    padding: 30px;
 }
