@@ -1,0 +1,54 @@
+.grid-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+}
+
+.grid-box>p{
+    background-color: burlywood;
+}
+
+.grid-box>p:first-child{
+    background-color: aqua;
+}
+
+.grid-box-row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /*row을 작성할때는 높이간격을 따로 주고싶을때*/
+    grid-template-rows: 1fr 1fr 2fr;
+}
+.grid-box-row>p:first-child{
+    margin: 30px 0;
+}
+
+.grid-box-item{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /*
+    template : 갯수만큼 크기 지정
+    auto : 모든 row의 오토를 어떻게 할지 지정
+    */
+    
+}
+.grid-box-item>p:nth-child(1){
+    grid-column: 1/4;
+    border: 1px solid saddlebrown;
+}
+.grid-box-item>p:nth-child(2){
+    grid-column: 2/4;
+    border: solid 1px black;
+}
+.grid-box-item>p:nth-child(3){
+    grid-row: 2/4;
+    grid-column: 2/4;
+}
+
+.grid-box-item>p:nth-child(4){
+    grid-column: 2/4;
+}
+
+.grid-box-item>p:nth-child(5){
+    grid-column: 1;
+    grid-row: 5;
+}

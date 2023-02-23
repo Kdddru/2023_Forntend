@@ -1,0 +1,30 @@
+body{
+    background-color: darkorange;
+}
+
+@media screen and (min-width:480px){
+    body
+    {
+        background-color: lightblue;
+    }
+    .grid-box-midia{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-width:481px) and (max-width:767px) {
+    body{
+        background-color: burlywood;
+    }
+    .grid-box-midia{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.grid-box-midia{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.grid-box-midia>.content{
+    width: 90%;
+    height: 300px;
+    background-color: white;
+}

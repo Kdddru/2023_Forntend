@@ -1,0 +1,30 @@
+.flex-box-bar{
+    width: 100%;
+    border: solid 2px red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-box-menu{
+    width: 60%;
+    border: solid 2px blue;
+}
+
+.flex-box-bar>.flex-box-menu>ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.flex-box-bar .logo{
+    min-width: 50px;
+    background-image: url(./img/free-icon-design-tool-9666968.png);
+    background-size: cover;
+    border: solid 2px blue;
+
+}
+
+.laug{
+    border: solid 2px blue;
+}
