@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.wrap{
+    width: 1000px;
+    background-color: green;
+    margin: auto;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*header*/
+.header{
+    width: 1000px; height: 200px;
+    background-color: darkgreen;
+    font-size: 4rem;
+    /*텍스트 줄 간격*/
+    line-height: 150px;
+}
+/*nav*/
+.nav{
+    background-color: olivedrab;
+    height: 100px;
+    /*
+    태그를 넣어서 중앙 정렬 padding 사용
+    nav의 크기가 지정되어있을떄 계산편의를 위함
+    */
+    box-sizing: border-box;
+    padding: 20px 0; /*안에 들어간 태그들을 flex라면 안줘도 뎀*/
+}
+/*main*/
+.main-float{
+    overflow: auto;
+}
+.main-float>.aside{
+    background-color: yellowgreen;
+    float: left;
+    width: 300px; height: 500px;
+    
+}
+.main-float>.content{
+    background-color: seagreen;
+    margin-left: 300px; /*주의*/
+    min-height: 500px;
+}
+.main-grid{
+    clear: both;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    height: 500px;
+}
+.main-grid>.aside{
+    background-color: seagreen;
+}
+.main-grid>.content{
+    background-color: springgreen;
+}
+
+/*footer*/
+.footer{
+    height: 80px;
+}
