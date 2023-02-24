@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.rayout{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3,1fr);
+    background-color: blueviolet;
+    width: 1000px;
+    height: 800px;
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.rayout>.header{
+    background-color: rebeccapurple;
+    position: relative;
+}
+.rayout>.section{
+    background-color: slateblue;
+    
+}
+
+.rayout>.aside{
+    background-color: darkviolet;
+    grid-row: 1/4;
+}
+
+.rayout>.footer{
+    background-color: violet;
+}

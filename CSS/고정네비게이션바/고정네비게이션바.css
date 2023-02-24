@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: aquamarine;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+}
+.header>.nav>ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+main{
+
+}
+
+.main>.content1{
+    height: 100vh;
+    background-color: bisque;
+    padding-top: 150px;
+}
+.main>.content2{
+    height: 100vh;
+    background-color: yellow;
+}
