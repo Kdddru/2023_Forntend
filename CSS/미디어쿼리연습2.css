@@ -1,0 +1,28 @@
+/* PC와 Tablet*/
+.contain{
+    display: grid;
+    min-height: 300px;
+    max-width: 1000px;
+    background-color: aquamarine;
+    grid-template-columns: repeat(2,1fr);
+}
+.contain>.main{
+    background-color: aqua;
+    grid-column: 1/3;
+}
+
+.contain>.section:nth-child(2){
+    background-color: blue;
+}
+
+/*Mobile*/
+@media screen and (max-width:767px){
+    .contain{
+        grid-template-columns: 1fr;
+    }
+    .contain>.main{
+        grid-column: 1/2;
+    }
+    
+    
+}
