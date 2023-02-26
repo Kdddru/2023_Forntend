@@ -1,0 +1,40 @@
+body,ul{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav>.gnb{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aquamarine;
+}
+.nav>.gnb>li:hover>.gnb-sub{
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s;
+}
+.nav>.gnb .gnb-sub
+{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    margin-left: -20px;
+    background-color: blanchedalmond;
+    padding: 10px 5px;
+}
+
+.nav>.gnb>li>.gnb-sub>li{
+    box-sizing: border-box;
+    height: 25px;
+}
+
+.nav>.gnb>li>.gnb-sub>li:hover{
+    border-bottom: solid 2px blue;
+    transition: all 0.2s;
+}
