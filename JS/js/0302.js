@@ -9,3 +9,5 @@ console.log(3+2 == 5);
 console.log("hi" != "hello");
 console.log(true||false);
 
+let hi = hello;
+console.log(hi); 
