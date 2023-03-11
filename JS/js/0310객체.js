@@ -105,5 +105,5 @@ for(let i in yourMessege){
 }
 
 for(let i in myBusCard){
-    document.write(`<p>${i} : ${myBusCard[i]}</p>`)
+    document.write(`<p>${i} : ${myBusCard[i]}</p>`);
 }
