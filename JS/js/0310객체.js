@@ -84,9 +84,9 @@ let yourBusCard = new BusCard(1000);
 
 
 function Messege(name, content, time){
-    this.name = name;
-    this.content = content;
-    this.time = time;
+    this.name = name;   
+    this.content = content;  
+    this.time = time; 
     this.modifyMessege = function(messege){
         this.content = messege;
     }
@@ -101,9 +101,12 @@ let yourMessege =new Messege("성춘향","안녕하세요","0224");
 
 
 for(let i in yourMessege){
+
     document.write(`<p>${i} : ${yourMessege[i]}</p>`);
 }
 
 for(let i in myBusCard){
+
     document.write(`<p>${i} : ${myBusCard[i]}</p>`);
+
 }
