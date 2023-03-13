@@ -99,3 +99,64 @@ function user(id, money){
 }
 
 let harry = new user("harry", 10000);
+
+//객체 안에 객체
+
+let memo = {
+    title : "오늘 할 일",
+    todo : {
+        morning : ["청소","준비"],
+        afternoon : ["수업"],
+        evening : ["정리","독서"]
+    }
+}
+
+//document.write(`${memo.todo.morning[0]}`);
+
+
+//배열 안에 객체
+
+let todoList = [
+    {time : "아침", todo:"청소"},
+    {time : "오전", todo:"수업"},
+    {time : "오후", todo:"독서"}
+];
+
+//document.write(`${todoList[1].todo}`);
+
+let myMovie = {
+    title : "킹메이커",
+    time : "120",
+    rate : 8.84,
+    coment : {
+        id : "movieMaster",
+        content : "Good"
+    }
+}
+
+function AnimalChart(name, kind, age){
+    this.name = name;
+    this.kind = kind;
+    this.age = age;
+    this.sickness = "";
+    this.condition = "";
+
+    this.receive = function(sickness, condition){
+        this.sickness = sickness;
+        this.condition = condition;
+    }
+    this.confirm = function(){
+        for(let i in this){
+            if(typeof(this[i]) != "function")
+                document.write(`<p>${i} : ${this[i]}</p>`);
+            }
+        }
+}
+
+let animalChartList = 
+[
+    new AnimalChart("홍길동","강아지",1),
+    new AnimalChart("홍","아지",2)
+];
+animalChartList[1].receive(`감기`,`나쁨`);
+animalChartList[1].confirm();
