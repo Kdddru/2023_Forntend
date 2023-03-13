@@ -33,22 +33,3 @@ let intro = {
     height : 187,
     weight : 74
 }
-
-function AnimalChart(name, kind, age){
-    this.name = name;
-    this.kind= kind;
-    this.age = age;
-    this.sickness ="";
-    this.condition = "";
-    this.receive = function(sickness, condition){
-        this.sickness = sickness;
-        this.condition = condition;
-    } 
-    this.confirm = function(){
-        for(let i in AnimalChart){
-            return`${i} : ${AnimalChart[i]}`;
-        }
-    }
-}
-
-let first = new AnimalChart(`홍길동`,`강아지`,1);
