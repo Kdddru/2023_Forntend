@@ -60,3 +60,47 @@ document.write(`<p>${string.split("길")}</p>`);//주민등혹번호,전화번�
 let centerString = string.charAt(1);
 document.write(`<p>${string.replaceAll(centerString,"*")}</p>`);
 
+// Date 객체
+
+let today = new Date();
+document.write(`<p>${today.getFullYear()} ${today.getMonth()+1} ${today.getDate()}</p>`);  //getFullYear 메서드(function)
+document.write(`<p>${today.getHours()} ${today.getMinutes()} ${today.getSeconds()} </p>`);  
+document.write(`<p>${today.getDate()}</p>`) //0~6까지 출력 switch or array 사용해서 요일로 변환
+
+//getTime : 시작시간과 끝시간을 이용해서 전체걸린 시간 체크
+
+let startTime = new Date();
+for(let i = 0; i<100; i++){
+    console.log(i);
+}
+let endTime = new Date();
+
+
+today.setFullYear(2020);
+document.write(`${today.getFullYear()}<br>`);
+
+
+let today2 = new Date();
+
+console.log(`${today2.getHours()} ${today2.getMinutes()} ${today2.getSeconds()}`);
+
+// Number
+
+document.write(`<p>${Number.isNaN("1")}</p>`);
+let num1 = 10.56;
+
+document.write(`${num1.toFixed()}`); // 소수 반올림해서 보여줌  ()안값은 소수 몇째자리 까지인지
+
+//tostring =>  객체.tostring = function() {return;}
+
+let object = {
+    name : "객체",
+    value : "값",
+    toString : function() {
+        return this.value;
+    }
+}
+
+
+document.write(`${object}`);
+
