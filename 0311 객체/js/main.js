@@ -9,8 +9,8 @@ function AnimalChart(name, kind, age){
     this.condition = "";
 
     this.receive = function(sickness,condition){
-        this.sickness +=sickness;
-        this.condition = condition;
+        this.sickness =sickness;
+        this.condition=condition;
     }
 
     this.confirm = function(){
@@ -22,5 +22,4 @@ function AnimalChart(name, kind, age){
     }
 }
 
-first.receive("감기","나쁨");
-first.receive(" 두통");
+first.receive("감기", "나쁨");
