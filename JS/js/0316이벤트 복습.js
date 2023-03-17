@@ -68,7 +68,7 @@ function changeColor(e){
 }
 
 const ul2 = document.querySelector('#ullist2');
-const ul2Li = document.querySelectorAll('li');
+const ul2Li = ul2.querySelectorAll('li');
 
 for(let i=0; i<ul2Li.length; i++){
     ul2Li[i].addEventListener("click",changeColor);
