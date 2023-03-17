@@ -1,0 +1,16 @@
+*{ margin: 0;padding: 0;}
+ul{ list-style-type: none; }
+a{text-decoration: none;  color: black;}
+
+
+#list{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+#list img{
+    margin: 20px;
+    width: 200px;
+    height: 250px;
+    display: none;    
+}

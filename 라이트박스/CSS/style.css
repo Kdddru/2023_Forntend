@@ -1,0 +1,44 @@
+*{margin: 0; padding: 0;}
+ul{list-style-type: none;}
+
+/*image-box*/
+.imagebox{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.box{
+    display: flex;
+}
+
+
+/*image-box의 img 태그*/
+.imagebox .box li .pic{
+    width: 200px;
+    height: 250px;
+    
+}
+
+
+
+/* lightbox */
+#lightbox{
+    width: 100%;
+    position: fixed;
+    top:0;
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+    padding: 5vh ;
+    /*
+    클래스를 통해서 block으로 바꿔도 되지만
+    하나밖에 없기에 속성으로 직접 접근해서 수정해도 된다
+    */
+    display: none;
+}
+
+
+
+/* lightbox의 이미지 */
+#lightbox #img{
+    width: 80vh ;
+}

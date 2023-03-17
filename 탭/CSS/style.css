@@ -1,0 +1,46 @@
+/* 기본 태그 디자인*/
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: black;}
+
+
+/*tab menu*/
+.tab_menu{
+    margin: 10px;
+}
+
+/*tab menu list*/
+.tab_menu .list{
+    display: flex;
+    height: 180px;
+}
+
+/* a 버튼*/
+
+.tab_menu .list li .btn{
+    padding: 0 10px;
+    font-size: 1.2rem;    
+}
+
+.tab_menu .list li.on .btn{
+    color: white;
+    background-color: skyblue;
+}
+
+
+/*contents*/
+.tab_menu .list li .content{
+    display: none;
+}
+
+.tab_menu .list li.on .content{
+    display: block;
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+    width: 400px;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: aquamarine;
+}
