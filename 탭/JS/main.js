@@ -16,4 +16,5 @@ function onTap(e){
         btnList[i].parentNode.classList.remove("on");
     }
     e.target.parentNode.classList.add("on");
+    //이벤트가 발생되는 태그에 있는 부모노드 클래스 on 준다.
 }
