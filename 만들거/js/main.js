@@ -1,14 +1,16 @@
-const list =document.querySelector('#list');
-const btn = list.querySelectorAll(`.btn`);
-const img = list.querySelectorAll('img');
-console.log(btn);
+const img = document.querySelector(`#menu`);
+const outbtn = document.querySelector(`#out`);
+const sideBar = document.querySelector(`#sideBar`);
+const sidemenu = document.querySelector(`#sidemenu`);
 
-for(let i=0;  i<btn.length; i++){
-    btn[i].addEventListener('click',printImg);
+img.addEventListener(`click`,printMenu);
+
+function printMenu(){
+    sideBar.classList.remove(`off`);
 }
 
+outbtn.addEventListener(`click`,outMenu)
 
-function printImg(e){
-    e.preventDefault();
-    
+function outMenu(){
+    sideBar.classList.add(`off`);
 }
