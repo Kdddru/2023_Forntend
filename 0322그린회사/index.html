@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 고정 내비게이션 바 시작 -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo"><a href="">Green</a></div>
+            <ul class="nav-menu">
+                <li><a href="#intro">소개</a></li>
+                <li><a href="#pictures">사진</a></li>
+                <li><a href="#news">뉴스</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main -->
+    <main class="main">
+        <!-- 섹션1 배너(슬라이더)-->
+        <section class="banner">
+            <ul class="slider">
+                <li class="slider-item">1</li>
+                <li class="slider-item">2</li>
+                <li class="slider-item">3</li>
+                <button class="slider-button prev" id="prev">&lt;</button>
+                <button class="slider-button next" id="next">&gt;</button>
+            </ul>
+        </section>
+        <!-- 섹션2 소개(스크롤 이벤트) -->
+        <a name="intro"></a>
+        <section class="intro-scroll"></section>
+        <!-- 섹션3 사진(슬라이더 버튼)-->
+        <a name="pictures"></a>
+        <section class="pictures"></section>
+        <!-- 섹션4 뉴스(스크롤 이벤트)-->
+        <a name="news"></a>
+        <section class="news-scroll"></section>
+    </main>
+    <!-- footer -->
+    <footer class="footer"></footer>
+    
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
