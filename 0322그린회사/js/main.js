@@ -1,4 +1,5 @@
 const nav = document.querySelector(`.nav`);
+const intro = document.querySelector(`.intro-scroll`);
 
 /*
 스크롤의 위치 : scrollX, scrollY
@@ -12,9 +13,11 @@ window.addEventListener(`scroll`,function(){
     //200 미만 scrollon 제거
     if(this.scrollY>=200){
         nav.classList.add(`scrollon`);
+        intro.classList.add(`scrollon`);
     }
     else{
-        nav.classList.remove(`scrollon`)
+        nav.classList.remove(`scrollon`);
+        intro.classList.remove(`scrollon`);
     }
     
 })

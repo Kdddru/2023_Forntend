@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider2.css">
 </head>
 <body>
     <!-- 고정 내비게이션 바 시작 -->
@@ -30,15 +31,49 @@
                 <button class="slider-button prev" id="prev">&lt;</button>
                 <button class="slider-button next" id="next">&gt;</button>
             </ul>
+            <div class="scroll-icon"><a href="#intro">👍</a></div>
         </section>
-        <!-- 섹션2 소개(스크롤 이벤트) -->
         <a name="intro"></a>
-        <section class="intro-scroll"></section>
-        <!-- 섹션3 사진(슬라이더 버튼)-->
+        <!-- 섹션2 소개(스크롤 이벤트) -->
+        <section class="intro-scroll">
+            <div class="green-intro">
+                <h1>그린회사</h1>
+                <p>그린회사는 어쩌고 저쩌고 이러고 저러고</p>
+            </div>
+            <div class="green-intro-image">
+                <div class="image">그림</div>
+            </div>
+        </section>
         <a name="pictures"></a>
-        <section class="pictures"></section>
-        <!-- 섹션4 뉴스(스크롤 이벤트)-->
+        <!-- 섹션3 사진(슬라이더 버튼)-->
+        <section class="pictures">
+            <div class="picture-wrap">
+                <div class="picture-explain">
+                    <h1>사진설명</h1>
+                    <p>자세한 설명</p>
+                </div>
+                <div class="picture-button">
+                    <a href="">사진1</a>
+                    <a href="">사진2</a>
+                    <a href="">사진3</a>
+                </div>
+            </div>
+            <!-- 다른형태의 슬라이더 -->
+            <div id="slider2" class="slider2">
+                <div class="slider2-item">1</div>
+                <div class="slider2-item">2</div>
+                <div class="slider2-item">3</div>
+                <!--
+                    <div class="slider2-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                -->
+            </div>
+        </section>
         <a name="news"></a>
+        <!-- 섹션4 뉴스(스크롤 이벤트)-->
         <section class="news-scroll"></section>
     </main>
     <!-- footer -->
@@ -46,5 +81,6 @@
     
     <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/slider2.js"></script>
 </body>
 </html>

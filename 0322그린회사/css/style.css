@@ -4,6 +4,8 @@
 /*태그 디자인*/
 html{scroll-behavior: smooth;}
 a{color: black; text-decoration: none;}
+h1{font-size: 2.4rem; margin: 20px 0;}
+/*탑버튼*/
 
 /*헤더와 네비게이션 바*/
 .header{
@@ -52,9 +54,68 @@ section{
     border: 1px solid darkblue;
 }
 
+/*섹션1*/
 .banner{
     height: 100vh;
 }
+.banner .scroll-icon{
+    position: absolute;
+    bottom: 50px; left: 50%;
+    font-size: 2rem;
+    transform: translate(0,20px);
+    cursor: pointer;
+    animation-name: movingIcon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+/*아이콘이 위아래로 움직이는 애니메이션*/
+@keyframes movingIcon{
+    0%{transform: translate(0,0);}
+    70%{transform: translate(0,20px);}
+    100%{transform: translate(0,0);}
+}
+/*섹션2*/
+.intro-scroll{
+    display: flex;
+    justify-content: center;
+    background-image: 
+    linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)),
+    url(/0322그린회사/img/사진3.jpg);
+    opacity: 0;
+}
+.intro-scroll.scrollon{
+    opacity: 1;
+    transition: all 0.8s;
+}
+
+.intro-scroll .green-intro{
+    background-color: rgba(255,255,255,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    border-radius: 30px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    transform: translateX(-500px);
+}
+.intro-scroll.scrollon .green-intro{
+    transform: translateX(0);
+    transition: all 1.6s;
+}
+
+
+.intro-scroll .green-intro-image{
+    width: 100vw;
+    height: inherit;
+    background-color: antiquewhite;
+}
+/*section3*/
+.pictures{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
 
 
 /* 푸터 */
