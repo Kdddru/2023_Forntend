@@ -115,11 +115,108 @@ section{
     display: grid;
     grid-template-columns: 2fr 3fr;
 }
+.pictures .picture-wrap{
+    padding: 20px 10px;
+}
 
+.pictures .picture-wrap .picture-explain{
+    margin-bottom: 40px;
+}
+
+.pictures .picture-wrap .picture-button a{
+    background-color: transparent;
+    color: black;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+.pictures .picture-wrap .picture-button a.on{
+    background-color: black;
+    color: white;
+    transition: all 0.2s;
+}
+/*섹션4*/
+.news-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 20px;
+}
+.card{
+    margin: 0 20px;
+    border: solid 2px black;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.card .card-image-wrap{
+    height: 150px;
+    background-color: bisque;
+    overflow: hidden;
+}
+.card .card-image-wrap .card-image{
+    height: inherit;
+    background-size: cover;
+}
+/* 카드 이미지 전환 */
+.card:hover .card-image-wrap .card-image{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    filter: brightness(0.7);
+}
+/* scrollon이 추가되었을때 보이는 전환효과*/
+
+.news-scroll{
+    opacity: 0;
+}
+.news-scroll.scrollon{
+    opacity: 1;
+    transition: 1s;
+}
+.news-scroll.scrollon .card{
+    transform: translateY(8px);
+    transition: 1s;
+}
+
+
+/*카드 이미지*/
+
+.card .card-text{
+    padding: 20px;
+}
+
+.card .card-text h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.card .card-text p{
+    font-weight: bold;
+    color: cornflowerblue;
+}
+.card .card-text span{
+    color: grey;
+}
+
+.card:nth-child(1) .card-image{
+    background-color: aqua;
+}
+.card:nth-child(2) .card-image{
+    background-color: blue;
+}
+.card:nth-child(3) .card-image{
+    background-color: skyblue;
+}
 
 
 /* 푸터 */
 .footer{
+    box-sizing: border-box;
     height: 200px;
     background-color: darkcyan;
+    color: white;
+    padding: 40px 60px;
+    display: flex;
 }

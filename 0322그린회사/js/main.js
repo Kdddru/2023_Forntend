@@ -1,5 +1,9 @@
 const nav = document.querySelector(`.nav`);
+//섹션2 인트로
 const intro = document.querySelector(`.intro-scroll`);
+//섹션4
+const news = document.querySelector(`.news-scroll`);
+
 
 /*
 스크롤의 위치 : scrollX, scrollY
@@ -19,6 +23,11 @@ window.addEventListener(`scroll`,function(){
         nav.classList.remove(`scrollon`);
         intro.classList.remove(`scrollon`);
     }
-    
+    if(this.scrollY>900){
+        news.classList.add(`scrollon`);
+    }
+    else{
+        news.classList.remove(`scrollon`);
+    }
 })
 
