@@ -7,6 +7,7 @@
     display: flex;
     flex-wrap: nowrap;
     width: 100%; 
+    overflow: hidden;
 }
 .slide div{
     width: 100%;
@@ -14,7 +15,7 @@
     background-color: skyblue;
     flex-shrink: 0;
     position: relative;
-    left: 0
+    left: 0%;
 }
 .slide div:nth-child(2){
     background-color: aqua;
@@ -34,5 +35,5 @@
 }
 
 #next{
-    right: 0;
+    right: 10px;
 }
