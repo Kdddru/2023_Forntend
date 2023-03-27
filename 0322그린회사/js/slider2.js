@@ -39,8 +39,8 @@ for(let i=0; i<slider2Items.length; i++){
         //forEach 반복함수
         slider2Items.forEach(function(item){
             //item 매개변수는 sliderItems의 요소값 slider2Items[i]
-            item.style.left = `${i*(-100)}%`}
-            );
+            item.style.left = `${i*(-100)}%`;
+        });
 
         for(let i=0; i< dots.children.length; i++){
             dots.children[i].classList.remove(`on`);
