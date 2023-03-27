@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ajax</h1>
+    <h3>기본 브라우저 실행</h3>
+    <ol>
+        <li>이벤트 발생</li>
+        <li>브라우저에서 Httprequest 생성및 요청</li>
+        <li>HttpReques처리</li>
+        <li>웹 페이지 전체를 다시 로딩</li>
+    </ol>
+    <h3>Ajax 실행</h3>
+    <ol>
+        <li>이벤트 발생</li>
+        <li>자바스크립트에서 Httprequest객체 생성 및 요청</li>
+        <li>서버에서 Ajax요청 처리</li>
+        <li>데이터를 가져와서 웹페이지 일부분 로딩</li>
+    </ol>
+    <h2>a태그를 이용한 값 가져오기 - (기본브라우저 실행)</h2>
+    <a href="data.txt">텍스트값</a>
+
+    <h2>Ajax를 이용한 값 가져오기</h2>
+    <button id="ajax-btn">Ajax를 이용한 값</button>
+    <p id ="ajax-text"></p>
+
+    <h2>웹에서 값을 가져오는 형태 JSON</h2>
+    <p>
+        자바스크립트의 개체와 동일한 모양을 하고있고
+        웹에서 값을 전달할 때 사용하게 된다.
+    </p>
+    <h3>a태그로 들고온 JSON</h3>
+    <a href="data.json">JSON 값</a>
+
+    <h3>Ajax를 이용하여 들고온 JSON</h3>
+    <button id="ajax-btn-json">Ajax JSON값</button>
+    <!--홍길동 내용 출력-->
+    <p id="ajax-json"></p>
+    
+
+
+    <script src="js/Ajax기본.js"></script>
+</body>
+</html>
