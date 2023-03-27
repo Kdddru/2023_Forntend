@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.slide{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%; 
+    overflow: hidden;
+}
+.slide div{
+    width: 100%;
+    height: 100vh;
+    background-color: skyblue;
+    flex-shrink: 0;
+    position: relative;
+    left: 0
+}
+.slide div:nth-child(2){
+    background-color: aqua;
+}
+.slide div:nth-child(3){
+    background-color: bisque;
+}
+.slide>button{
+    position: absolute;
+    font-size: 3rem;
+    top: 50%;
+    margin: 0 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+#next{
+    right: 0;
+}
