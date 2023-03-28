@@ -34,7 +34,7 @@ const fetchBtn2 = document.querySelector(`#fetch-btn2`);
 fetchBtn2.addEventListener(`click`, async function(){
     const promise = await fetch(`./data.json`);
 
-    if(!pormise.ok){
+    if(!promise.ok){
         console.error("값이 존재하지않음".promise.ok);
     }
     const response = await promise.json();
