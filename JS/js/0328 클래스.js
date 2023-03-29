@@ -21,7 +21,7 @@ console.log(myclass);
 function MyFunc(name){
     this.name = name;
     this.money = 0;
-    this.sayName =function(){
+    this.sayName = function(){
         alert(this.name);
     }
     this.setMoney = () =>{
@@ -33,7 +33,7 @@ let myfunc = new MyFunc(`blue`);
 myfunc.sayName();
 
 for (let i in myclass) {
-    console.log(i);
+    console.log(i, myclass[i]);  //속성만 나타남
     
 }
 for(let i in myfunc){

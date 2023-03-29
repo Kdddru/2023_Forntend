@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> <!--바벨-->
+    <link rel="stylesheet" href="css/JSX.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        //컴포넌트 작성
+        function MyApp(){
+            const name = 'React'
+            const result = 1+2;
+            const user = '홍길동';
+            const login = true;
+            const content = 'react';
+            //style은 객체형식으로
+            const style = {
+                color : 'aqua'
+            }
+            return(
+                <div style={style}>
+                    <h1 className='react-style font-size'>{name}에 자바스크립트를 추가해서 작성하고 있습니다</h1>
+                    <p className = {"react-style"}>
+                        1+2 = {result}와 같은 연산도 계산 할 수 있습니다
+                    </p>
+                    <p>배열 : {[1,2,3]}</p>
+                    <p>
+                        객체 : {{id:1}.id} 
+                        객체는 그안에 있는 속성이 문자, 숫자형이면 출력
+                        객체 자기자신은 출력x
+                    </p>
+                    <p>들어갈수 있는 자바스크립트 코드:{name.slice(0.2)}</p>
+                    <p>
+                        {}안에 들어갈수 있는 코드는 한줄로 실행되고 ;로 마무리되는 코드이며
+                        {'{}'}안에 출력
+                    </p>
+                    
+                    <h1>if문 대신에 삼항연산자 사용</h1>
+                    
+                    <div>
+                        {name === 'Reac' ? (<h1>리액트입니다</h1>):(<h2>리액트가 아닙니다</h2>) }
+                    </div>
+                    <div>
+                        {login === true ? (<div><h1>로그인</h1><h2>{user}입니다</h2></div>):
+                            (<div><h1>로그인실패</h1><p>리액트를 시작하였습니다</p></div>)}   
+                    </div>
+                    <div>
+                        {name === 'React' && <h1>리액트 입니다 참일떄만 출력합니다</h1>}   
+                    </div>
+                    <p>
+                        {user==='홍길동' && <div><h1>로그인에 성공하였습니다</h1><h3>{user}입니다</h3></div>}
+                    </p>
+                </div>
+            )
+        }
+        
+        const container = document.querySelector(`#root`);
+        const root = ReactDOM.createRoot(container);  //컨데이너안에 만들기
+        root.render(<MyApp/>);
+    </script>
+</body>
+</html>

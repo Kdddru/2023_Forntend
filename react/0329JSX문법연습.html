@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> <!--바벨-->
+    <link rel="stylesheet" href="css/0329문법연습.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function MyApp(){
+            
+            return(
+                <div>
+                    {/*주석을 이렇게 씁니다*/}
+                    <p className={`font-style`}>react</p>
+                    <p className={`font-`+`style`}>괄호를 통해서도 바꿔짐</p>
+                </div>
+                
+            )
+        }
+        const container = document.querySelector(`#root`);
+        const root = ReactDOM.createRoot(container);
+        root.render(<MyApp/>);
+    </script>
+</body>
+</html>
