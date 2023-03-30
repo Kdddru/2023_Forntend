@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  //오류인지 아닌지 확인해줌
   <React.StrictMode>
     <App />
   </React.StrictMode>
