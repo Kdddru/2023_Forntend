@@ -3,6 +3,7 @@ import './App.css';
 import PorpsComp from './components/PorpsComp';
 import CountComp from './components/CountComp';
 import CountPropsComp from './components/CountPropsComp';
+import LoginComp from './components/LoginComp' ;
 
 function App() {
   return (
@@ -19,6 +20,14 @@ function App() {
           props의 num값을 가져와서 버튼을 클릭할때마다 num씩 증가
          */}
         <CountPropsComp num={5}/>
+        {/*
+        *loginComp 작성후 
+        *state : name ,   loign ; false
+        * input에서 name 받아오기
+        * <button>에서 login true;
+        * <h1> name출력
+        */}
+        <LoginComp/>
     </div>
   );
 }

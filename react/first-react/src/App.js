@@ -9,6 +9,7 @@ import {LoginText} from './components/LoginComp';
 import OtherComp from './components/OtherComp';
 
 import StateComp from './components/StateComp';
+import EventComp from './components/EventComp';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
     <TextComp name='성춘향'>반갑습니다</TextComp>
     <OtherComp></OtherComp>
     <StateComp></StateComp>
+    <EventComp/>
+    <LoginComp/>
     </div>
   );
 }
