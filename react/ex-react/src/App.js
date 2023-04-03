@@ -4,6 +4,7 @@ import PorpsComp from './components/PorpsComp';
 import CountComp from './components/CountComp';
 import CountPropsComp from './components/CountPropsComp';
 import LoginComp from './components/LoginComp' ;
+import RefDomEvent from './components/refDom';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         * <h1> name출력
         */}
         <LoginComp/>
+        <RefDomEvent/>
     </div>
   );
 }

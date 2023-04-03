@@ -11,6 +11,8 @@ import OtherComp from './components/OtherComp';
 import StateComp from './components/StateComp';
 import EventComp from './components/EventComp';
 
+import RefDomEvent from './components/refDom';
+
 function App() {
   return (
     <div className="App">
@@ -27,6 +29,7 @@ function App() {
     <StateComp></StateComp>
     <EventComp/>
     <LoginComp/>
+    <RefDomEvent/>
     </div>
   );
 }

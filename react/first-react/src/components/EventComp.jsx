@@ -133,7 +133,6 @@ export class EventComp extends Component {
                     this.setState({input: e.target.value});
                     console.log("input",this.state.input);  // 이전값이 나온다
                 }}></input>
-                <input></input>
             </div>
         )
     }

@@ -47,7 +47,7 @@ class StateComp extends Component{
                     -1
                 </button>
                 <button onClick={()=>{
-                    this.setState({number:number-number})
+                    this.setState({number:number-number});
                 }}>
                     초기화
                 </button>
@@ -57,3 +57,4 @@ class StateComp extends Component{
 }
 
 export default StateComp;
+
