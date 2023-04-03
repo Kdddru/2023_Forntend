@@ -5,6 +5,7 @@ import CountComp from './components/CountComp';
 import CountPropsComp from './components/CountPropsComp';
 import LoginComp from './components/LoginComp' ;
 import RefDomEvent from './components/refDom';
+import MemoComp from './components/memoComp';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         */}
         <LoginComp/>
         <RefDomEvent/>
+        <MemoComp/>
     </div>
   );
 }

@@ -12,6 +12,7 @@ import StateComp from './components/StateComp';
 import EventComp from './components/EventComp';
 
 import RefDomEvent from './components/refDom';
+import MapCamp from './components/mapComp';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
     <EventComp/>
     <LoginComp/>
     <RefDomEvent/>
+    <MapCamp/>
     </div>
   );
 }

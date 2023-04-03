@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import EventComp from './EventComp';
 
 
-export class RefDomEvent extends Component {
+class RefDomEvent extends Component {
     constructor(props){
         super(props);
         // input태그가 들어갈 공간(변수)
@@ -45,7 +44,6 @@ export class RefDomEvent extends Component {
     getMyComp = ()=>{
         console.log(this.myComp);
         console.log(this.myComp.current);
-    
     }
 
 
