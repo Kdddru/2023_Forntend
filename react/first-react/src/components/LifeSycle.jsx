@@ -25,7 +25,7 @@ export class LifeSycle extends Component {
 
     //화면에서 없어질때
     componentWillUnmount(){
-        console.log('컨포넌트가 언마운트 되었다')
+        console.log('컨포넌트가 언마운트 되었다');
     }
 
 
