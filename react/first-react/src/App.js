@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
 import MyComponent from './components/Mycomponent';
 import TextComp from './components/TextComp';
 
 //2가지 컴포넌트
 import LoginComp from './components/LoginComp';
-import {LoginText} from './components/LoginComp';
+
 import OtherComp from './components/OtherComp';
 
 import StateComp from './components/StateComp';
@@ -13,6 +13,7 @@ import EventComp from './components/EventComp';
 
 import RefDomEvent from './components/refDom';
 import MapCamp from './components/mapComp';
+import LifeSycle from './components/LifeSycle';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
     <LoginComp/>
     <RefDomEvent/>
     <MapCamp/>
+    <LifeSycle/>
     </div>
   );
 }

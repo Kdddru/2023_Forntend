@@ -10,7 +10,7 @@ import MemoComp from './components/memoComp';
 function App() {
   return (
     <div>
-        <PorpsComp color='red'>props값을 밥다와서 글자색을 바꿉니다</PorpsComp>
+        <PorpsComp color='red'>props값을 받아와서 글자색을 바꿉니다</PorpsComp>
         {/** state을 사용한는 클래스 컴포넌트
         버튼을 클리할때마다 10씩 증가하는 컴포넌트
          */}

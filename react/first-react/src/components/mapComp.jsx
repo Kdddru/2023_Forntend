@@ -8,15 +8,11 @@ class MapCamp extends Component {
             names : ['홍길동','성춘향'],
             students : 
             [
-                {id:1, name:'홍길동'},
-                {id:2, name:'성춘향'},
-                {id:3, name:'김철수'},
-                {id:4, name:'고라니'}
 
             ],
             inputText : ''  //onChange를 이용해서 바꾸기
         };
-        this.id = 5;
+        this.id = this.state.students.length+1;
     }
 
     changeInputText = (e) =>{this.setState({inputText : e.target.value})}
@@ -34,8 +30,9 @@ class MapCamp extends Component {
     }
 
     deleteStudent =(student) =>{
-        const newStudents = this.state.students.filter((s)=>s.id !== student);
-        this.setState({students : newStudents})
+        const newStudents = this.state.students.filter((s)=>s.id !== student.id);
+        this.setState({students : newStudents});
+        this.id--;   //setState일때 화면 업데이트
     }
 
 
@@ -83,7 +80,7 @@ class MapCamp extends Component {
                                 <td>
                                     {s.id}
                                 </td>
-                                <td onClick={()=>{this.deleteStudent(s.id)}}>
+                                <td onClick={()=>{this.deleteStudent(s)}}>
                                     {s.name}
                                 </td>
                             </tr>)}
