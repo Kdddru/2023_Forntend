@@ -1,12 +1,12 @@
 import './App.css';
-import Mapremind from './components/Mapremind';
-import productData from './data/products.json';
+import FunctionComp from './components/FnComp';
+
+
 
 function App() {
-  console.log(productData);
   return (
     <div className="App">
-    <Mapremind product={productData}/>
+    <FunctionComp/>
     </div>
   );
 }
