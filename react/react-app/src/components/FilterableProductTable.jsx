@@ -16,7 +16,7 @@ export class FilterableProductTable extends Component {
   //toggle 메소드를 실행할때마다 this.state.isOnlystock T/F로 바꿈
 
   toggleStock = () =>{
-    this.setState({isOnlyStock: !this.state.isOnlyStock})
+    this.setState({isOnlyStock: !this.state.isOnlyStock});
     console.log(this.state.isOnlyStock);
   }
   
