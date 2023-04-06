@@ -40,6 +40,9 @@ console.log(fandomNum);
                 }}>삭제</button>
                 </li>
                 )}
+                {fandoms.map((x,i)=>
+                <li key={i}>{x.name}{x.id}</li>
+                )}
             </ul>
         </div>
     )
