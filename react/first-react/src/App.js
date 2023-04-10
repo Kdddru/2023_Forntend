@@ -14,6 +14,8 @@ import EventComp from './components/EventComp';
 import RefDomEvent from './components/refDom';
 import MapCamp from './components/mapComp';
 import LifeSycle from './components/LifeSycle';
+import { EffectHook } from './components/EffectHook';
+import { EffectHook2 } from './components/EffectHook2';
 
 function App() {
   return (
@@ -33,7 +35,10 @@ function App() {
     <LoginComp/>
     <RefDomEvent/>
     <MapCamp/>
-    <LifeSycle/>
+    {/*<LifeSycle/>*/}
+    <hr/> 
+    {/*<EffectHook//>*/}
+    <EffectHook2/>
     </div>
   );
 }

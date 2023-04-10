@@ -10,6 +10,7 @@ const FunctionComp = (props) =>{
         {id:6, name:`라니`}
     ]);
 let fandomNum = fandoms.length+1;
+
 const addFandom = () =>{
     const newList = fandoms.concat({
         id:fandomNum, 
