@@ -25,7 +25,7 @@ export const Home = () => {
             <p><Link to={`/story/${fruit}`}>Story</Link></p>
             <Link to ={'/story2'}>Story2</Link>
             <hr/>
-
+            <Link to={`/articles`}>Article</Link>
             <FormComp/>
             <hr/>
             {/** map을 이용해서 배열의 값을 Link의 to 주소값으로 사용 */
@@ -40,6 +40,9 @@ export const Home = () => {
                 <p key={i}><Link to={`/story2/${f}`}>{f}story2</Link></p>
                 ))
             }
+            <hr/>
+            <Link to={'/story2'}>story2</Link>
+            <p><Link to={`/navigate`}>navigate</Link></p>
         </div>
     )
 }
