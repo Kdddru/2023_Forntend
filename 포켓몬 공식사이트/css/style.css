@@ -1,0 +1,53 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+
+.page-div{
+  height: 100vh;
+}
+
+
+
+.header,.main,.footer{
+  width: 100%;
+}
+
+.header{
+  background-color: red;
+  border-bottom: solid 4px black;
+  height: 80px;
+}
+.header>.circle-top{
+  position: absolute;
+  background-color: white;
+  width: 80px;
+  height: 40px;
+  left: 45%;
+  top: 40px;
+  border-top: solid 4px black;
+  border-left: solid 4px black;
+  border-right: solid 4px black;
+  border-radius: 300px 300px 0 0;
+}
+
+.main{
+  background-color: lightgray;
+  height: 85vh
+}
+
+.footer{
+  background-color: white;
+  border-top: solid 4px black;
+  height: 80px;
+}
+.footer>.circle-bottom{
+  position: absolute;
+  background-color: white;
+  width: 80px;
+  height: 40px;
+  left: 45%;
+  bottom: 48px;
+  border-left: solid 4px black;
+  border-right: solid 4px black;
+  border-bottom: solid 4px black;
+  border-radius: 0 0 300px 300px;
+}
