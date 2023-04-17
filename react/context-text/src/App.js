@@ -13,7 +13,7 @@ import { DataPrint } from './context/DataPrint';
 // >> 변수의 값이 많다면 확인하기 힘들다
 // >> context를 만들때, value값도 함께 작성해서 만들자!
 
-const initValue = {name:'홍길동',login:true}
+const initValue = {name:'홍길동', login:true}
 
 function App() {
   return (

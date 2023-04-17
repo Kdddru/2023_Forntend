@@ -12,6 +12,7 @@ export const DataBox = () => {
   )
 }
 
+
 function DataText (){
 
   const value = useContext(DataContext);
