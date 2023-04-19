@@ -20,11 +20,23 @@ const DataProvider = ({children}) =>{
     {writer:'익명', login:false}
   );
 
+  //comentlist 값 저장
+  const [commentlist, setCommentList] = useState([
+    {
+      id: 1,
+      boardId : 1,
+      text: "첫번째 게시글의 코멘트입니다",
+      date: "2023-04-19",
+      writer: "키랄",
+    },
+  ]);
+
 
   const value ={
-    state : {boardlist ,id, user},
-    action : {setBoardlist, setId, setUser}
+    state : {boardlist ,id, user, commentlist},
+    action : {setBoardlist, setId, setUser, setCommentList}
   }
+
 
   return(
     <DataContext.Provider value={value}>

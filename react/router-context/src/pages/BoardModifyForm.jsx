@@ -23,7 +23,6 @@ export const BoardModifyForm = () => {
   const[title, setTitle] = useState(boardData.title);
 
   const[content, setContent] = useState(boardData.content);
-
   //context에서 작성한 value의 state의 boardlist의 값을 추가
   //value의 action의 setBoardlist에 접근해서 작성한 새로운 값 추가
   /** 
@@ -42,8 +41,8 @@ export const BoardModifyForm = () => {
     const newBoard = {
       //boardDate의 모든값을 들고 올 수있음
       ...boardData,
-      title,
-      content
+      title, //덮어 씌운다
+      content //덮어 씌운다
     }
 
     const newBoardlist = state.boardlist.map((board)=>(
@@ -55,8 +54,6 @@ export const BoardModifyForm = () => {
     navigate(`/boardlist/${newBoard.id}`);
 
   }
-  
-
 
   return (
     <div>

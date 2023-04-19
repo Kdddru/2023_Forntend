@@ -9,6 +9,7 @@ export const LoginForm = () => {
 
 
   const onLogin = () =>{
+    
     const newUser={
       writer: writer,
       login : true
@@ -16,8 +17,9 @@ export const LoginForm = () => {
 
     action.setUser(newUser);
     navigate(`/`);
-
+    
   }
+
 
   return (
     <div>

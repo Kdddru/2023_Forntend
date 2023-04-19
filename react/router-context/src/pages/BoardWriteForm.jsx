@@ -63,9 +63,7 @@ export const BoardWriteForm = () => {
       />
       <br/>
       <button
-      onClick={()=>{
-        addBoard()
-      }}
+      onClick={addBoard}
       >게시</button>
     </div>
   )
