@@ -10,9 +10,10 @@ const DataContext = React.createContext(``);
 //:페이지 컴포넌트 - path로 연결된 컴포넌트
 
 const DataProvider = ({children}) =>{
+  //데이터 들고오기
   const[boardlist, setBoardlist] = useState(dummy);
 
-
+  //id
   const[id, setId] = useState(4);
 
   //user값 을 사용하기 위해 useState() 작성
@@ -31,11 +32,20 @@ const DataProvider = ({children}) =>{
     },
   ]);
 
+  const [likelist, setLikelist] = useState(
+    [
+      {
+        boardId : 1,
+        title : '첫번째 게시물입니다'
+      }
+    ]
+  );
 
   const value ={
-    state : {boardlist ,id, user, commentlist},
-    action : {setBoardlist, setId, setUser, setCommentList}
+    state : {boardlist ,id, user, commentlist, likelist},
+    action : {setBoardlist, setId, setUser, setCommentList, setLikelist}
   }
+
 
 
   return(

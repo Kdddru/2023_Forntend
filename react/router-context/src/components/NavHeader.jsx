@@ -13,6 +13,7 @@ export const NavHeader = () => {
         state.user.login ? <span>{state.user.writer}</span>
         :<Link to={`/loginForm`}>Login</Link>
       }
+      <Link to={`/image`}>/ Img</Link>
     </div>
   )
 }
