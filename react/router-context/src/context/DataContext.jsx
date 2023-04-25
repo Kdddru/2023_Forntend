@@ -10,6 +10,8 @@ const DataContext = React.createContext(``);
 //:페이지 컴포넌트 - path로 연결된 컴포넌트
 
 const DataProvider = ({children}) =>{
+
+  let cid = 3;
   //데이터 들고오기
   const[boardlist, setBoardlist] = useState(dummy);
 
@@ -24,7 +26,7 @@ const DataProvider = ({children}) =>{
   //comentlist 값 저장
   const [commentlist, setCommentList] = useState([
     {
-      id: 1,
+      cid: 1,
       boardId : 1,
       text: "첫번째 게시글의 코멘트입니다",
       date: "2023-04-19",
@@ -41,9 +43,13 @@ const DataProvider = ({children}) =>{
     ]
   );
 
+    const cidCount = () =>{
+      cid++ ;
+    } 
+
   const value ={
-    state : {boardlist ,id, user, commentlist, likelist},
-    action : {setBoardlist, setId, setUser, setCommentList, setLikelist}
+    state : {boardlist ,id, user, commentlist, likelist, cid},
+    action : {setBoardlist, setId, setUser, setCommentList, setLikelist, cidCount}
   }
 
 
