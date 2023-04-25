@@ -9,11 +9,13 @@ export const NavHeader = () => {
       <Link to={`/`}>Home / </Link>
       <Link to={`/boardlist`}>Board / </Link>
       <Link to={`/boardwriteform`}>boardwriteform / </Link>
+      <Link to={`/image`}>Img /</Link>
       {
-        state.user.login ? <span>{state.user.writer}</span>
+        state.user.login ? <Link to={`/mypage`}>
+        <span>{state.user.writer}</span>의 페이지  
+        </Link> 
         :<Link to={`/loginForm`}>Login</Link>
       }
-      <Link to={`/image`}>/ Img</Link>
     </div>
   )
 }
