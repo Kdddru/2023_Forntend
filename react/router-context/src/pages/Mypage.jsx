@@ -92,6 +92,7 @@ export const Mypage = () => {
       </ul>
 
       {/** 모달창 사용*/}
+      {/** 프로필 수정창 */}
         <div className='modal-background'
           style={{
             width : "100%",
