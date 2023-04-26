@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const ComentComp = (props) => {
-  const {writer,text, date,id} = props.comment;
+  const {writer,text, date,cid} = props.comment;
 
   const {deleteComment} = props
 
@@ -15,7 +15,7 @@ export const ComentComp = (props) => {
       <button
       //메소드를 사용할때, cid전달해야함
       onClick={()=>{
-        deleteComment(id)
+        deleteComment(cid)
       }}
       >x</button>
     </div>

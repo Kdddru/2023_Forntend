@@ -39,12 +39,13 @@ export const Board = () => {
   //comment 추가
   const addComment = () =>{
     const newComment = {
-      id : 1,
+      cid : state.cid,
       boardId : boardData.id,
       text : text,
       date : `2023-04-19`,
       writer : state.user.writer
     }
+    action.cidCount();
 
     const newCommentList = state.commentlist.concat(newComment);
 
@@ -53,11 +54,11 @@ export const Board = () => {
   }
   //코멘트 삭제
 
-  const deleteComment = (id) =>{
+  const deleteComment = (cid) =>{
     const newnewCommentList =state.commentlist.filter((comment)=>(
-      comment.id !== id
+      comment.cid !== cid
     ))
-    action.commentlist(newnewCommentList);
+    action.setCommentList(newnewCommentList);
   }
 
   return (
@@ -110,9 +111,9 @@ export const Board = () => {
         <hr/>
         <h3>코멘트</h3>
         {
-          boardCommentlist.map((comment,i)=>(
+          boardCommentlist.map((comment)=>(
               <ComentComp
-                key = {i}
+                key = {comment.cid}
                 comment={comment}
                 deleteComment={deleteComment}
               />
