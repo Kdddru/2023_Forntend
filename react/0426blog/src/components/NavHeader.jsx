@@ -17,8 +17,11 @@ import Navbar from 'react-bootstrap/Navbar';
  *  
  */
 
+//prop값을 구조분할로 객체의 값을 바로 가져올 수 있다
+export const NavHeader = ({user}) => {
 
-export const NavHeader = () => {
+
+
   return (
     <div>
       <Navbar bg='primary' variant='dark'>
@@ -27,7 +30,11 @@ export const NavHeader = () => {
           <Nav className="me-auto">
             <Link to={`/`} className='nav-link'>홈</Link>
             <Link to={`/boardlist`} className='nav-link'>게시판</Link>
-            <Link to={`/loginform`} className='nav-link'>로그인</Link>
+            {/**유저의 값이 있다면 user.name을 출력 */}
+            {
+              user ? <Navbar.Text>{user.name}</Navbar.Text>  : 
+              <Link to={`/loginform`} className='nav-link'>로그인</Link>
+            }
           </Nav>
         </Container>
       </Navbar>
