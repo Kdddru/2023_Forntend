@@ -23,22 +23,25 @@ export const Board = ({boardlist}) => {
     if(board === undefined){
       navigate(`/`)
     }
-  },[]);
+  });
 
   return (
     <div>
       {board && 
-        (<div>
-          <h1>{board.title}</h1>
-          <p>{board.id}</p>
-          <div style={{display:'flex', justifyContent:'space-evenly',marginTop:'10px',marginBottom:'10px'}}>
-            <span>
-              작성자: {board.name}
-            </span>
+        (
+          <div>
+            <h1>{board.title}</h1>
+            <p>{board.id}</p>
+            <div style={
+              {display:'flex', justifyContent:'space-evenly',marginTop:'10px',marginBottom:'10px'}
+              }>
+              <span>
+                작성자: {board.name}
+              </span>
+            </div>
+            <p>{board.content}</p>
+            <p>{board.date}</p>
           </div>
-          <p>{board.content}</p>
-          <p>{board.date}</p>
-        </div>
         )
       }
     </div>

@@ -5,7 +5,8 @@ import { BoardForm } from './page/BoardForm';
 import { LoginForm } from './page/LoginForm';
 import { Board } from './page/Board';
 //import { ColorSchemesExample } from './components/ColorSchemesExample';
-
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 // bootstrap css 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -27,27 +28,12 @@ function App() {
 // {name:'green'}
 const [user, setUser] = useState(
   null
-);
-
-const [boardlist, setBoardlist] = useState(
-  [
-    {
-      id:1,
-      title : '첫번째 게시물',
-      content : '게시물의 내용을 작성합니다',
-      name : 'green',
-      date : '2023-04-27'
-    },
-    {
-      id:2,
-      title : '두번째 게시물',
-      content : '게시물의 내용을 작성합니다',
-      name : 'blue',
-      date : '2023-04-27'
-    }
-  ]
-);
-
+  );
+  
+  
+  const [boardlist, setBoardlist] = useState([]);
+    
+    let id = boardlist.length+1;
 
 
   return (
@@ -57,7 +43,8 @@ const [boardlist, setBoardlist] = useState(
           <Route index element={<Home/>}/>
           <Route path='/boardlist' element={<Boardlist boardlist={boardlist}/>}/>
           <Route path='/boardlist/:id' element={<Board boardlist={boardlist}/>}/>
-          <Route path='/boardform' element={<BoardForm/>}/>
+          <Route path='/boardform' element={<BoardForm 
+          setBoardlist={setBoardlist} id={id} boardlist={boardlist} user={user}/>}/>
           <Route path='/loginform' element={<LoginForm setUser={setUser}/>}/>
         </Routes>
     </div>
