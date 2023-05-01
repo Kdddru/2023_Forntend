@@ -3,6 +3,7 @@ import { SimpleSlider } from '../components/SimpleSlider'
 
 
 import axios from 'axios'
+import { KakaoMapComp } from '../components/KakaoMapComp';
 
 export const Home = () => {
 
@@ -35,6 +36,7 @@ export const Home = () => {
     <div>
       <h3>{weather}/{weatherIcon}</h3>
       <SimpleSlider/>
+      <KakaoMapComp/>
     </div>
   )
 }
