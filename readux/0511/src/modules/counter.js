@@ -17,8 +17,12 @@ export const increase = () =>(
 );
 export const decrease = () =>(
   {type : 'DECREASE'}
-)
+);
 
+//num : dispatch에서 change 함수를 불어와서 사용했을때 변경
+export const change = (num) =>(
+  {type : 'CHANGE', num}
+);
 
 const initalState = 0;
 
@@ -30,6 +34,8 @@ function counter(state= initalState, action){
       return state+1;
     case 'DECREASE':
       return state-1;
+    case 'CHANGE':
+      return state + action.num;
     default : 
       return state;
   }

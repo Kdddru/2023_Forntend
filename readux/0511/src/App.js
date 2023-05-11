@@ -1,5 +1,6 @@
 import './App.css';
 import { CounterBox } from './components/CounterBox';
+import { CounterNumber } from './components/CounterNumber';
 import { ExConterbox } from './components/ExConterbox';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <CounterBox/>
       <ExConterbox/>
+      <CounterNumber/>
     </div>
   );
 }

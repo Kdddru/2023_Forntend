@@ -2,6 +2,10 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { increase,decrease } from '../modules/counter'
 
+
+
+
+
 export const ExConterbox = () => {
 
   //state값 들고오기
@@ -23,6 +27,7 @@ export const ExConterbox = () => {
       <button
       onClick={()=>{
         dispatch(decrease())
+        //dispatch({type : "DEREASE"})
       }}
       >-</button>
     </div>

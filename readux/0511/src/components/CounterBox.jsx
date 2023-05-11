@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { increase,decrease } from '../modules/counter';
+import { increase,decrease, change } from '../modules/counter';
 
 //리듀서 값을 사용 : useSelector
 //리듀서에 있는 값을 수정 : useDispatch 
@@ -19,10 +19,17 @@ export const CounterBox = () => {
       <div>
         <button
         onClick={()=>{
-          dispatch(increase())
+          dispatch((change(-30)))
         }}
         >
-          +
+          -30
+        </button>
+        <button
+        onClick={()=>{
+          dispatch(change(-5))
+        }}
+        >
+          -5
         </button>
         <button
         onClick={()=>{
@@ -30,6 +37,27 @@ export const CounterBox = () => {
         }}
         >
           -
+        </button>
+        <button
+        onClick={()=>{
+          dispatch(increase())
+        }}
+        >
+          +
+        </button>
+        <button
+        onClick={()=>{
+          dispatch(change(5))
+        }}
+        >
+          +5
+        </button>
+        <button
+        onClick={()=>{
+          dispatch((change(30)))
+        }}
+        >
+          +30
         </button>
       </div>
     </div>
