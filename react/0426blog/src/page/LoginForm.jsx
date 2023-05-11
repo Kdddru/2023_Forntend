@@ -7,12 +7,11 @@ import { useNavigate } from 'react-router-dom';
 export const LoginForm = ({setUser}) => {
   const navi = useNavigate();
   const [name, setName] = useState();
-  const [password, setPassword] = useState();
   const loginUser = (e) =>{
     e.preventDefault();
     setUser({name:name});
 
-    navi('/');
+    navi('/');  // Link to 같은 느낌
   }
 
   return (

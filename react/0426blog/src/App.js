@@ -43,8 +43,8 @@ const [user, setUser] = useState(
           <Route index element={<Home/>}/>
           <Route path='/boardlist' element={<Boardlist boardlist={boardlist}/>}/>
           <Route path='/boardlist/:id' element={<Board boardlist={boardlist}/>}/>
-          <Route path='/boardform' element={<BoardForm 
-          setBoardlist={setBoardlist} id={id} boardlist={boardlist} user={user}/>}/>
+          <Route path='/boardform' element={
+          <BoardForm setBoardlist={setBoardlist} id={id} boardlist={boardlist} user={user}/>}/>
           <Route path='/loginform' element={<LoginForm setUser={setUser}/>}/>
         </Routes>
     </div>

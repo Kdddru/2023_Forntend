@@ -15,7 +15,8 @@ export const Home = () => {
 
     async function getWeather() {
       try {
-        const response = await axios.get('https://api.openweathermap.org/data/2.5/weather?q=Busan&appid=b24758f12a0cc287be08722bb2b7ce04&lang=kr');
+        const response = 
+        await axios.get('https://api.openweathermap.org/data/2.5/weather?q=Busan&appid=b24758f12a0cc287be08722bb2b7ce04&lang=kr');
         console.log(response);
         console.log(response.data.weather[0].main);
         console.log(response.data.weather[0].icon);

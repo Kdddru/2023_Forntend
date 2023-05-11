@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 
 export const KakaoMapComp = () => {
+
+  //id값으로 useRef로 들고오는 것이 낫다
   
   const kakao = window.kakao;
 
