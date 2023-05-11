@@ -10,7 +10,7 @@ export const CounterBox = () => {
   const counter = useSelector((state)=>(
     state.counter
   ))
-  console.log(counter);
+  console.log(`Counter: ${counter}`);
 
   return (
     <div>
