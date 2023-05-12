@@ -1,5 +1,4 @@
-
-
+//초기 state값
 const initalState = [
   {
     id : 1,
@@ -12,6 +11,8 @@ const initalState = [
     date: "2023-05-12",
   },
 ]
+
+let id = 3;
 
 
 //액션 생성 함수
@@ -26,8 +27,9 @@ export default function memo(state=initalState, action){
     case "ADD_MEMO":
       const newMemo = {
         ...action.payload,
-        id : 3
+        id : id
       }
+      id++
       const newMemoList = state.concat(newMemo);
       return newMemoList
     
