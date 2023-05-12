@@ -32,7 +32,6 @@ export const getWeather = () => async(next) =>{
 }
 
 
-
 //리듀서
 function weatherThunk (state = initialState, action) {
   switch(action.type){
