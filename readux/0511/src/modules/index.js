@@ -2,12 +2,14 @@
 import { combineReducers } from "redux";
 import counter from "./counter";
 import counterNumber from "./counterNumber";
-
+import memo from "./memo";
 
 //combineReducers는 state
 //combineReducers안에 있는 counter은 속성값으로 설정된다
+
+//dispatch를 통해 action에 파라미터 가져온다
 const rootReducer = combineReducers(
-  {counter,counterNumber}
+  {counter,counterNumber,memo}
   )
 
   export default rootReducer
