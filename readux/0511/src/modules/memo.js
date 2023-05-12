@@ -1,3 +1,5 @@
+
+
 //초기 state값
 const initalState = [
   {
@@ -21,6 +23,11 @@ export const addMemo = (memo)=>(
   {type : "ADD_MEMO", payload : memo}
 );
 
+//메모 아이디값 들고옴
+export const DeleteMemo = (id)=>(
+  {type : "DELETE_MEMO", payload : id}
+);
+
 //리듀서
 export default function memo(state=initalState, action){
   switch(action.type){
@@ -32,7 +39,11 @@ export default function memo(state=initalState, action){
       id++
       const newMemoList = state.concat(newMemo);
       return newMemoList
-    
+    case "DELETE_MEMO" :
+      const deleteMemoList = state.filter((memo)=>(
+        memo.id !== action.payload
+      ))
+      return deleteMemoList
     default :
       return state
   }
