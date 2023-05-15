@@ -29,7 +29,7 @@ export const memoSlice = createSlice({
       return newMemoList
     },
     deleteMemoSplice : (state, action)=>{
-      state.splice(action.payload,1)
+      state.splice(action.payload,1);
     }
   }
 })
