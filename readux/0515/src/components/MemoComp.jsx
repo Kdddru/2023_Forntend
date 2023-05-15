@@ -12,6 +12,7 @@ export const MemoComp = () => {
       <h1>MemoComp</h1>
       {memo.map((m,i)=>(
         <div key={m.id}>
+          <p>{i}</p>
           <p>{m.date}</p>
           <p>{m.text}</p>
           <button

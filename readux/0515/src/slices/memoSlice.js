@@ -4,11 +4,6 @@ import { createSlice } from "@reduxjs/toolkit";
 export const memoSlice = createSlice({
   name:"memo",
   initialState:[
-    {
-      id : 1,
-      text : "첫번째 메모입니다",
-      date: "2023-05-15",
-    },
   ],
   reducers: {
     addMemoRedux : (state,action)=>{
@@ -23,7 +18,7 @@ export const memoSlice = createSlice({
     addMemoToolkit : (state,action) =>{
       const newMemo = {
         ...action.payload,
-        id : state.length+1,
+        id : state.length,
       }
       state.push(newMemo);
     },
