@@ -37,5 +37,4 @@ function counterNumber(state=initalState, action){
   }
 }
 
-
 export default counterNumber

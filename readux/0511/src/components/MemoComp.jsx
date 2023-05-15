@@ -14,10 +14,10 @@ export const MemoComp = () => {
     dispatch(addMemo(
           {text : input, date: "2023-05-12"}
         ))
-        setInput('');
+    setInput('');
   }
   const onDeleteMemo = (id) =>{
-    dispatch(DeleteMemo(id))
+    dispatch(DeleteMemo(id));
   }
 
   return (
