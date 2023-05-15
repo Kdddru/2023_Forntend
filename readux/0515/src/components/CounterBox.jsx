@@ -25,10 +25,10 @@ export const CounterBox = () => {
       <input type='number' onChange={(e)=> 
       setNum(e.target.value)}/>
       <br/>
+
       <button
       onClick={()=>{dispatch(incrementByAmount(parseInt(num)))}}
       >+{num}</button>
-      
       <button
       onClick={()=>{dispatch(decrementByAmount(parseInt(num)))}}
       >

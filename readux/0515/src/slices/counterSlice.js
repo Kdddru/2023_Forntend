@@ -10,8 +10,9 @@ export const counterSlice =createSlice({
     increment : (state) => {
       state.value+=1 ;
     },
+    //return을 사용하면 이전방식으로 사용하여 값을 저장할수있다
     decrement: (state) => {
-      state.value-=1;
+      return{ value : state.value-1}
     },
     incrementByAmount : (state,action) =>{
       state.value += action.payload
