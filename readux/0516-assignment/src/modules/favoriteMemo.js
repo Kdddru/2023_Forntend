@@ -8,8 +8,7 @@ export const favoriteMemo = createSlice(
     reducers:{
       addFavorite : (state, action)=>{
         const newFavorite = {
-          ...action.payload,
-          id : state.length
+          ...action.payload
         }
         const newFavoriteList = state.concat(newFavorite)
         return newFavoriteList

@@ -10,11 +10,12 @@ export const MemoList = () => {
   const memo = useSelector((state)=>(
     state.memo
   ))
-
+  const LikeMemo = useSelector((state)=>(
+    state.favorite
+  ))
 
   const [inputValue, setInputValue] = useState('');
   
-  const [ischeck, setIscheck] = useState(false);
 
   return (
     <div>
@@ -45,11 +46,10 @@ export const MemoList = () => {
           <button
           onClick={()=>{
             dispatch(addFavorite(m))
-            setIscheck((e)=>!e)
           }}
           >
             <FontAwesomeIcon
-            style={ischeck&&{color : '#ff0000'}}
+            color={LikeMemo.find((l)=>(l.id === m.id))? 'red':''}
             icon={faHeart}/>
           </button>
           <button
