@@ -18,7 +18,7 @@ export const memoSlice = createSlice({
     addMemoToolkit : (state,action) =>{
       const newMemo = {
         ...action.payload,
-        id : state.length,
+        id : state.length+1,
       }
       state.push(newMemo);
     },
