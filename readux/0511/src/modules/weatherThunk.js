@@ -17,7 +17,7 @@ const initialState = {
 }
 
 
-//액션 생성 함수 >> thunk
+//액션 생성 함수 >> thunk    next 제공해준다
 //thunk를 사용하면 async를 붙여서 비동기함수로 쓸 수 있다
 //async가 붙은 함수는 따로 계속 실행이되고 있다
 export const getWeather = () => async(next) =>{
