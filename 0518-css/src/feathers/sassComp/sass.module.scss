@@ -1,0 +1,10 @@
+$main-color : blue;
+
+
+.color{
+  color: $main-color;
+  // color안에서 & color
+  &:hover{
+    color : skyblue;
+  }
+}
