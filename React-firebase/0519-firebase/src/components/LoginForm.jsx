@@ -18,7 +18,7 @@ export default function LoginForm() {
     //인증하는것
     createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      // Signed in
+      // 회원가입 성공
       const user = userCredential.user;
       console.log(user);
       // ...
@@ -28,26 +28,37 @@ export default function LoginForm() {
         displayName : user.displayName 
       })
     })
-      //Signed fail
+      //회원가입 fail
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
       console.log(errorCode,errorMessage);
       // ..
+      if(errorCode === 'auth/email-already-in-use'){
+        alert('동일한 이메일이 있습니다');
+      }
+      else if(errorCode==='auth/weak-password'){
+        alert(`비밀번호를 6자리 이상 적어주세요!`);
+      }
     });
   }
 
   //로그인
   const onLogin =() =>{
     async function getLogin(){
+      //로그인 성공
       try{
         const userCredential = signInWithEmailAndPassword(auth, email, password);
         const user = userCredential.user;
         console.log(user);
         console.log('로그인');
       }
+      //로그인 실패
       catch(error){
         console.log(error.code, error.message);
+        if(error.code ==='auth/user-not-found ' || 'auth/wrong-password'){
+          alert(`없는 이메일이거나 비밀번호가 잘못되었습니다`);
+        }
       }
     }
 
