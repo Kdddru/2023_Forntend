@@ -2,6 +2,7 @@ import './App.css';
 import { useCallback, useMemo, useState } from 'react';
 import { StatusBar } from './components/StatusBar';
 import { SavButton } from './components/SavButton';
+import InputBox from './components/InputBox';
 
 function App() {
   const [input,setInput] = useState('');
@@ -35,7 +36,11 @@ function App() {
 
     <StatusBar/>
     <SavButton/>
+    
 
+    <hr/>
+
+    <InputBox/>
 
     </div>
   );
