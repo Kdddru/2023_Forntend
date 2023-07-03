@@ -1,0 +1,29 @@
+
+.buttonBox{
+  margin: auto;
+  margin-top: 20px;
+  width: 30%;
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+
+.joinBtn{
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 90px;
+  height: 35px;
+  font-size: 1rem;
+}
+
+.loginBtn{
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 80px;
+  height: 35px;
+  font-size: 1rem;
+}
