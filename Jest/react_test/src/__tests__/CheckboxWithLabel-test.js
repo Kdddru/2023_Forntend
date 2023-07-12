@@ -1,4 +1,4 @@
-import {cleanup, fireEvent, render} from '@testing-library/react';
+import {cleanup, fireEvent, queryByLabelText, render} from '@testing-library/react';
 import CheckboxWithLabel from '../components/CheckboxWithLabel';
 
 // Note: running cleanup afterEach is done automatically for you in @testing-library/react@9.0.0 or higher
@@ -23,4 +23,16 @@ it('CheckboxWithLabel이 클릭 이후 글자가 바뀜', () => {
   fireEvent.click(getByLabelText(/off/i));
 
   expect(queryByLabelText(/on/i)).toBeTruthy();
+
+  
+});
+
+it('CheckboxWithLabel 클릭확인', ()=>{
+  const {getByLabelText, queryByLabelText} = render(
+    <CheckboxWithLabel labelOn={'선택'} labelOff={'취소'}/>
+  )
+  expect(getByLabelText(/취소/i)).toBeTruthy();
+  fireEvent.click(getByLabelText(/취소/i));
+  expect(queryByLabelText(/선택/i)).toBeTruthy();
+
 });
